@@ -43,7 +43,7 @@ def main(frame):
 
     while True:
         ret, frame = cap.read()
-        result = model(frame)[]
+        result = model(frame)
         detections = sv.Detection.from_yolov8(result)
         lables = [
             f'{model.model.names[class_id]} {confidence:0.2f}'
@@ -55,7 +55,7 @@ def main(frame):
             detections = detections,
             lables = lables
         )
-       if lables == 'no_helmet':
+       # if lables == 'no_helmet':
        # cv2.imshow('not_helmet', frame)
 
         if not ret:
