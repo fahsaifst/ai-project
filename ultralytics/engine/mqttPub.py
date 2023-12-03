@@ -5,14 +5,13 @@ import json
 from paho.mqtt import client as mqtt_client
 
 
-#broker = 'localhost'
-broker = 'test.mosquitto.org'
-port = 1883
+broker = 'mixko50.trueddns.com'
+port = 25836
 topic = 'KMUTT/Helmet_Detector'
-# Generate a Client ID with the publish prefix.
+#Generate a Client ID with the publish prefix.
 client_id = f'publish-{random.randint(0, 1000)}'
-# username = 'user'
-# password = 'password'
+username = 'helmet'
+password = 'mixko00112233'
 
 def connect_mqtt():
     def on_connect(client, userdata, flags, rc):
