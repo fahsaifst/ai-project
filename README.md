@@ -1,1 +1,1 @@
-# ai-project
+# Hemet detector
